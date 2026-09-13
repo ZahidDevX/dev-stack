@@ -11,8 +11,9 @@
 }
 
 html,
-body {
+body {  
     font-family: var(--font-primary);
+    color: var(--color-normal);
 }
 
 .text-gradient-primary {
