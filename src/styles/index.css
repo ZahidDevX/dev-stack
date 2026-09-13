@@ -25,13 +25,13 @@ body {
 }
 
 .btn-primary{
-    @apply px-4 py-2.5 rounded-lg bg-dark text-white;
+    @apply text-xs lg:text-base px-4 py-2.5 rounded-lg bg-dark text-white cursor-pointer;
 }
 
 .btn-outline{
-    @apply px-4 py-2.5 rounded-lg text-normal border border-muted;
+    @apply text-xs lg:text-base px-4 py-2.5 rounded-lg text-normal border border-muted cursor-pointer;
 }
 
 .btn-accent{
-    @apply px-4 py-3 bg-linear-to-r rounded-lg from-[#F97316] to-[#EC4899] text-white;
+    @apply text-xs lg:text-base px-4 py-3 bg-linear-to-r rounded-lg from-[#F97316] to-[#EC4899] text-white cursor-pointer;
 }
