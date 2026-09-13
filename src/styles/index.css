@@ -25,7 +25,7 @@ body {
 }
 
 .btn-primary{
-    @apply text-xs lg:text-base px-4 py-2.5 rounded-lg bg-dark text-white cursor-pointer;
+    @apply text-xs lg:text-base px-4 py-2.5 rounded-xl bg-dark text-white cursor-pointer;
 }
 
 .btn-outline{
