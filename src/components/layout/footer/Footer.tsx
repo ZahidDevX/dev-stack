@@ -1,6 +1,7 @@
 import logo from "@assets/images/logo-text.png";
 import { Container } from "@components/layout/Container";
-import FooterNavGroup from "./partials/FooterNavGroup";
+import FooterNavGroup from "@components/layout/footer/partials/FooterNavGroup";
+import type { INavGroup } from "@/types/footer";
 
 const Footer = () => {
     const date = new Date();
@@ -52,7 +53,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    { navGroups.map((navGroup) => <FooterNavGroup navGroup={ navGroup } key={ navGroup.title } />) }
+                    { navGroups.map((navGroup: INavGroup) => <FooterNavGroup navGroup={ navGroup } key={ navGroup.title } />) }
                 </div>
                 <div className="flex justify-between items-center py-12 border-t-2 border-slate-100 mt-14 text-xs md:text-base">
                     <p className="text-muted">&copy; { currentYear } Dev Stack. All rights reserved.</p>
