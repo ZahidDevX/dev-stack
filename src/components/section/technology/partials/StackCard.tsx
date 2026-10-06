@@ -1,6 +1,7 @@
 import type { ITechnology } from "@/types/technology";
 import type { Dispatch, SetStateAction } from "react";
 import { FaXmark } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 interface SelectedTechCardProps {
     selectedTechnology: ITechnology;
@@ -14,6 +15,7 @@ const StackCard = ({ selectedTechnology, stack, setStack }: SelectedTechCardProp
             return tech.id !== selectedTechnology.id;
         });
         setStack(newStack);
+        toast.success(`Technology ${selectedTechnology.name} removed from your stack.`);
     };
     return (
         <div className="p-4 border border-slate-100 rounded-2xl flex gap-3 justify-between items-center">

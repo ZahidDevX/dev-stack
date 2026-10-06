@@ -1,6 +1,7 @@
 import type { ITechnology } from "@/types/technology";
 import type { Dispatch, SetStateAction } from "react";
 import StackCard from "./StackCard";
+import { toast } from "react-toastify";
 
 interface SelectedTechListProps {
     stack: ITechnology[],
@@ -11,6 +12,7 @@ const Stack = ({ stack, setStack }: SelectedTechListProps) => {
 
     const handleRemoveAll = () => {
         setStack([]);
+        toast.success("Removed all technologies from your stack.")
     };
 
     const stackLength = stack.length;
